@@ -20,7 +20,7 @@ echo "如果存在 ssl.pl 文件，则删除..."
 rm -f /www/server/panel/data/ssl.pl
 echo "安装python依赖requests"
 pip install flask requests
-
+pip install pymysql
 # 重启面板服务
 echo "重启面板服务..."
 /etc/init.d/bt restart
